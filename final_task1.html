@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pooji's Landing Page</title>
+
+    <style>
+        body{
+            margin:0;
+            font-family:Arial, sans-serif;
+            background-color:lightblue;
+        }
+
+        nav{
+            background-color:black;
+            padding:20px;
+            text-align:center;
+            position:fixed;
+            top:0;
+            width:100%;
+            box-shadow:0 2px 10px gray;
+            z-index:1000;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:15px;
+            font-size:20px;
+        }
+
+        nav a:hover{
+            color:red;
+        }
+
+        .hero{
+            text-align:center;
+            padding:120px 20px;
+        }
+
+        .hero h1{
+            font-size:50px;
+            color:darkblue;
+        }
+
+        .hero p{
+            font-size:25px;
+        }
+
+        .hero button{
+            background-color:blue;
+            color:white;
+            border:none;
+            padding:12px 25px;
+            font-size:20px;
+            border-radius:8px;
+            cursor:pointer;
+            transition:all 0.3s ease;
+            box-shadow:0 4px 8px gray;
+        }
+
+        .hero button:hover{
+            background-color:green;
+            transform:scale(1.1);
+        }
+
+        .hero img{
+            display:block;
+            margin:20px auto;
+            border-radius:15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="hero">
+        <h1>Welcome to Pooji's Landing Page</h1>
+        <p>I am a Future Software Engineer</p>
+
+        <button>Explore</button>
+
+        <img src="ganesha.jpg" alt="Ganesha Image" width="300">
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br>
+
+    <h2 style="text-align:center;">More Content</h2>
+    <p style="text-align:center;">This is my landing page.</p>
+
+    <br><br><br><br><br><br><br><br><br><br>
+
+    <script>
+        window.addEventListener("scroll", function () {
+
+            const nav = document.querySelector("nav");
+
+            if(window.scrollY > 50){
+                nav.style.backgroundColor = "blue";
+            }
+            else{
+                nav.style.backgroundColor = "black";
+            }
+
+        });
+    </script>
+
+</body>
+</html>
